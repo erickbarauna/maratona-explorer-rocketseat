@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona Explorer</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script 
+      type="text/javascript" 
+      src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
     <div id="container">
-        <img src="https://cdn-icons-png.flaticon.com/512/1188/1188426.png" alt="Imagem de uma bola de cristal">
-        <h1>
-            Vou revelar o seu destino!
-        </h1>
-        <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-        <input id="inputPergunta" type="text" placeholder="Digite sua pergunta">
-        <button onclick="fazerPergunta()">Fazer Pergunta</button>
-        <h3 id="resposta"></h3>
+      <img src="https://cdn-icons-png.flaticon.com/512/1188/1188426.png" alt="Imagem de uma bola de cristal">
+      <h1>Vou revelar seu destino!</h1>
+      <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
+      <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" onfocus="this.value='';">
+      <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
+
+      <h3 id="resposta"></h3>
     </div>
-</body>
+  </body>
+
 </html>
